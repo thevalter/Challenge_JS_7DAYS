@@ -8,11 +8,27 @@
 </head>
 <body>
 
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        form{
+            margin-bottom: 50px;
+        }
+
+        .rowInfo{
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
+
     <h1>Cadastro de pessoas</h1>
 <form class="form js-form">
     <label for="name">
         Nome
-        <input class="form-field js-field" id="name" maxlength="120" minlength="3" name="name" required type="text" pattern="[aA-zZ]+\s)">
+        <input class="form-field js-field" id="name" maxlength="120" minlength="3" name="name" required type="text" required pattern="([^\s][A-zÀ-ž\s]+)">
     </label>
     <label for="birth-date">
         Data de Nascimento
@@ -20,6 +36,18 @@
     </label>
     <button type="submit">Salvar</button>
 </form>
+
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Data de Nascimento</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+    </tbody>
+</table>
     
 </body>
 <script src="app.js"></script>
