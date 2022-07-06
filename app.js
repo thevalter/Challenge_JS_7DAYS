@@ -46,8 +46,8 @@ const createRow = (saveClient, index) => {
         <td class="rowInfo">${saveClient.nome}</td>
         <td class="rowInfo">${saveClient.nascimento}</td>
         <td>
-        <button type="button" id="edit-${index}">Editar</button>
-        <button type="button" id="delete-${index}">Excluir</button>
+        <button class="green" type="button" id="edit-${index}">Editar</button>
+        <button class="red" type="button" id="delete-${index}">Excluir</button>
         </td>
     `
     document.querySelector('table>tbody').appendChild(newRow);

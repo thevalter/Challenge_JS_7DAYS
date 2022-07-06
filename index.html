@@ -4,34 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>CRUD</title>
 </head>
 <body>
-
-    <style>
-        body{
-            margin: 0;
-            padding: 0;
-        }
-
-        form{
-            margin-bottom: 50px;
-        }
-
-        .rowInfo{
-            padding: 20px;
-            margin-bottom: 10px;
-        }
-    </style>
-
     <h1>Cadastro de pessoas</h1>
 <form class="form js-form">
     <label for="name">
-        Nome
+        Nome:
         <input class="form-field js-field" id="name" data-index="new" maxlength="120" minlength="3" name="name" required type="text" required pattern="([^\s][A-zÀ-ž\s]+)">
     </label>
     <label for="birth-date">
-        Data de Nascimento
+        Data de Nascimento:
         <input class="form-field js-field" id="birth-date" name="birth-date" required type="date">
     </label>
     <button type="submit">Salvar</button>
@@ -42,6 +26,7 @@
         <tr>
             <th>Nome</th>
             <th>Data de Nascimento</th>
+            <th>Ações</th>
         </tr>
     </thead>
     <tbody>
